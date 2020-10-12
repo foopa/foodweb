@@ -78,7 +78,6 @@ header .container1 .burger i {
 
 .content {
   width: 100%;
-  height: 100vh;
   background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +94,6 @@ header .container1 .burger i {
 .content .textcontent {
   margin-top: 5vh;
   height: 40vh;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +132,6 @@ header .container1 .burger i {
   max-width: 236px;
   width: 100%;
   margin-top: 5vh;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,13 +151,174 @@ header .container1 .burger i {
   max-width: 236px;
   width: 100%;
   height: 68px;
-  border: 1px solid black;
   border-radius: 30px;
   text-align: center;
   line-height: 68px;
+  background-color: #FA4A0C;
+  color: white;
 }
 
 .content .buttons .button2 {
+  background-color: #fff;
+  border: 1px solid #FA4A0C;
+  color: #FA4A0C;
   margin-top: 2vh;
+}
+
+.content .phones {
+  margin-top: 6vh;
+}
+
+.content .phones img {
+  width: 100%;
+}
+
+.content .textD {
+  margin-top: 2vh;
+  text-align: center;
+  border: 1px solid black;
+  width: 55%;
+  font-size: 18px;
+}
+
+.content .line {
+  margin-top: 5vh;
+  width: 100%;
+  height: 2px;
+  background-color: #E4E4E4;
+}
+
+.content2 {
+  background-color: #FAFAFA;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content2 .textcontent2 {
+  margin-top: 8vh;
+  width: 86%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content2 .textcontent2 .text2A {
+  font-size: 19px;
+  padding: 1%;
+}
+
+.content2 .textcontent2 .text2B {
+  font-size: 18px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.content2 .textcontent2 .text2C {
+  font-size: 19px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content2 .phone2 {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content2 .phone2 img {
+  width: 100%;
+}
+
+.content3 {
+  background-color: #FAFAFA;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content3 .textcontent3 {
+  margin-top: 8vh;
+  width: 86%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content3 .textcontent3 .text3A {
+  font-size: 19px;
+  padding: 1%;
+}
+
+.content3 .textcontent3 .text3B {
+  font-size: 18px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.content3 .textcontent3 .text3C {
+  font-size: 19px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content3 .phone3 {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content3 .phone3 img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
