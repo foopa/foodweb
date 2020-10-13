@@ -2,4 +2,128 @@
     header{
         height: 12.7vh;
     }
+    .content{
+        .textcontent{
+            height: 35vh;
+            .textA{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .textB{
+                h1{
+                    font-size: 36px;
+                }
+            }
+            .textC{
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+        .buttons{
+            .button1,.button2{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .textD{
+            width: 60%;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    .content2{
+        .textcontent2{
+            height: 50vh;
+            .text2A{
+                p{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .text2B{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .text2C{
+                p{
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+    .content3{
+        .textcontent3{
+            height: 50vh;
+            .text3A{
+                p{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .text3B{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .text3C{
+                p{
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+    .content4{
+        .textcontent4{
+            height: 50vh;
+            .text4A{
+                p{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            .text4B{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            .text4C{
+                p{
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+    .content5{
+        .textcontent5{
+            height: 25vh;
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .buttons5{
+            font-size: 16px;
+        }
+    }
+    footer{
+       .text5a{
+           p{
+               font-size: 12px;
+               font-weight: 500;
+           }
+       }
+    }
+
+
 }

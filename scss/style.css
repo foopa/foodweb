@@ -513,5 +513,84 @@ footer .text5A p {
   header {
     height: 12.7vh;
   }
+  .content .textcontent {
+    height: 35vh;
+  }
+  .content .textcontent .textA p {
+    font-size: 16px;
+  }
+  .content .textcontent .textB h1 {
+    font-size: 36px;
+  }
+  .content .textcontent .textC p {
+    font-size: 24px;
+  }
+  .content .buttons .button1, .content .buttons .button2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .textD {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content2 .textcontent2 {
+    height: 50vh;
+  }
+  .content2 .textcontent2 .text2A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content2 .textcontent2 .text2B h1 {
+    font-size: 40px;
+  }
+  .content2 .textcontent2 .text2C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content3 .textcontent3 {
+    height: 50vh;
+  }
+  .content3 .textcontent3 .text3A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content3 .textcontent3 .text3B h1 {
+    font-size: 40px;
+  }
+  .content3 .textcontent3 .text3C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content4 .textcontent4 {
+    height: 50vh;
+  }
+  .content4 .textcontent4 .text4A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content4 .textcontent4 .text4B h1 {
+    font-size: 40px;
+  }
+  .content4 .textcontent4 .text4C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content5 .textcontent5 {
+    height: 25vh;
+  }
+  .content5 .textcontent5 h1 {
+    font-size: 40px;
+  }
+  .content5 .textcontent5 p {
+    font-size: 24px;
+  }
+  .content5 .buttons5 {
+    font-size: 16px;
+  }
+  footer .text5a p {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 /*# sourceMappingURL=style.css.map */
