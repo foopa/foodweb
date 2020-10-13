@@ -7,11 +7,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     display: flex;
+    align-items: center;
     flex-direction: column;
+
+
 }
 @import 'variables';
-@import 'lg';
-@import 'xxxs';
 @import 'css1';
 @import 'css2';
 @import 'css3';
@@ -19,5 +20,6 @@ body{
 @import 'css5';
 @import 'css6';
 @import 'css7';
-
+@import 'xxxs';
+@import 'lg';
 

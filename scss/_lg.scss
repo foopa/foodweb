@@ -1,8 +1,21 @@
 @media (min-width:1200px){
     header{
+        height: 156px;
         .container1{
+            width: 100%;
+            height: 156px;
+            .logo{
+                top: 50%;
+                transform: translateY(-50%);
+                left: 90px;
+                img{
+                    max-width: 206px;
+                    height: 102px;
+                    width: 100%;
+                }
+            }
             .menuDesktop{
-                display: block !important;
+                display: block;
             }
             .burger{
                 display: none;
@@ -10,5 +23,253 @@
         }
          
     }
+    .content{
+        position: relative;
+        background-color: transparent;
+        .background{
+            position: absolute;
+            background-color:rgb(238, 186, 186);
+            width: 100%;
+            height: 619px;
+            z-index: -1;
+            background-image: url("bgc.png");
+
+        }
+        .textcontent{
+            width: 1005px;
+            margin-top: 72px;
+            // border: 1px solid black ;
+            height: 326px;
+            justify-content: space-between;
+            color: white;
+            .textA{
+                p{
+                    font-size: 24px;
+                }
+            }
+            .textB{
+                h1{
+                    font-size: 58px;
+                }
+            }
+            .textC{
+                // border: 1px solid black;
+                width: 728px;
+                height: 96px;
+                p{
+                    margin-top: 10px;
+                    font-size: 24px;
+                }
+            }
+        }
+        .buttons{
+            margin-top: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            // border: 1px solid black;
+            max-width: 506px;
+            height: 68px;
+            .button1,.button2{
+                margin: 0;
+                width: 236px;
+            }
+        }
+        .textD{
+            margin-top: 72px;
+            margin-bottom: 58px;
+            order: 1;
+            h1{
+                font-size: 44px;
+            }
+
+        }
+        .line{
+            width: 884px;
+        }
+    }
+    .content2{
+        width: 100%;
+        height: 807px;
+        flex-direction: row;
+        position: relative;
+        // border: 1px solid orange;
+
+        .textcontent2{
+            position: absolute;
+            top: 233px;
+            right: 10.69%;
+            width: 568px;
+            height: 280px;
+            order: 1;
+            // border: 1px solid black;
+            align-items: flex-start;
+            .text2A{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+            }
+            .text2B{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 57px;
+            }
+            .text2C{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 38px;
+                width: 467px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            
+        }
+        .phone2{
+            position: absolute;
+            top: 78px;
+            left: 17%;
+        }
+    }
+    .content3{
+        width: 100%;
+        height: 506px;
+        flex-direction: row;
+        position: relative;
+        // border: 1px solid orange;
+        
+        .textcontent3{
+            position: absolute;
+            top: 88px;
+            left: 254px;
+            width: 568px;
+            height: 280px;
+            order: 1;
+            // border: 1px solid black;
+            margin: 0;
+            align-items: flex-start;
+            .text3A{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+            }
+            .text3B{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 57px;
+            }
+            .text3C{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 38px;
+                width: 467px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            
+        }
+        .phone3{
+            position: absolute;
+            top: -110px;
+            right: 17%;
+        }
+    }
+    .content4{
+        width: 100%;
+        height: 807px;
+        flex-direction: row;
+        position: relative;
+        // border: 1px solid orange;
+
+        .textcontent4{
+            position: absolute;
+            top: 233px;
+            right: 10.69%;
+            width: 568px;
+            height: 280px;
+            order: 1;
+            // border: 1px solid black;
+            align-items: flex-start;
+            .text4A{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+            }
+            .text4B{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 57px;
+            }
+            .text4C{
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                line-height: 38px;
+                width: 467px;
+                p{
+                    font-size: 24px;
+                }
+            }
+            
+        }
+        .phone4{
+            position: absolute;
+            top: 150px;
+            margin: 0;
+            left: 17%;
+        }
+    }
+    .content5{
+        height: 516px;
+        width: 100%;
+        background-color:rgb(238, 186, 186);
+        .textcontent5{
+            width: 860px;
+            height: 135px;
+            .text5A{
+                h1{
+                margin: 10px;
+                font-size: 40px;
+                }
+            }
+            .text5B{
+                p{
+                    margin: 10px;
+                    font-size: 24px;
+                }
+            }
+        }
+        .buttons5{
+            width: 331px;
+            height: 64px;
+            justify-content: space-between;
+            .button3{
+                width: 142px;
+            }
+            .button4{
+                width: 173px;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        height: 240px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .socials{
+            width: 171px;
+            height: 41px;
+        }
+        .text5A{
+            display: none;
+        }
+    }
+   
 
 }

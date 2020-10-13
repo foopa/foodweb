@@ -28,8 +28,9 @@ header{
         .menuDesktop{
             display: none;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 40px;
             ol{
                 width: 580px;
                 height: 48px;
@@ -37,7 +38,9 @@ header{
                 align-items: center;
                 justify-content: space-between;
                 list-style-type: none;
+                // border: 1px solid;
                 li{
+                    cursor: pointer;
                     padding: 10px;
                     font-size: 16px;
                 }
