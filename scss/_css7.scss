@@ -4,6 +4,9 @@ footer{
     align-items: center;
     justify-content: center;
     height: 30vh;
+    .logo2,.text5B{
+        display: none;
+    }
     .socials{
         max-width: 171px;
         width: 100%;
