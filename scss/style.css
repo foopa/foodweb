@@ -15,6 +15,100 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 1200px) {
+  header .container1 .menuDesktop {
+    display: block !important;
+  }
+  header .container1 .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 370px) {
+  header {
+    height: 12.7vh;
+  }
+  .content .textcontent {
+    height: 35vh;
+  }
+  .content .textcontent .textA p {
+    font-size: 16px;
+  }
+  .content .textcontent .textB h1 {
+    font-size: 36px;
+  }
+  .content .textcontent .textC p {
+    font-size: 24px;
+  }
+  .content .buttons .button1, .content .buttons .button2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .textD {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content2 .textcontent2 {
+    height: 50vh;
+  }
+  .content2 .textcontent2 .text2A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content2 .textcontent2 .text2B h1 {
+    font-size: 40px;
+  }
+  .content2 .textcontent2 .text2C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content3 .textcontent3 {
+    height: 50vh;
+  }
+  .content3 .textcontent3 .text3A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content3 .textcontent3 .text3B h1 {
+    font-size: 40px;
+  }
+  .content3 .textcontent3 .text3C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content4 .textcontent4 {
+    height: 50vh;
+  }
+  .content4 .textcontent4 .text4A p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content4 .textcontent4 .text4B h1 {
+    font-size: 40px;
+  }
+  .content4 .textcontent4 .text4C p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .content5 .textcontent5 {
+    height: 25vh;
+  }
+  .content5 .textcontent5 h1 {
+    font-size: 40px;
+  }
+  .content5 .textcontent5 p {
+    font-size: 24px;
+  }
+  .content5 .buttons5 {
+    font-size: 16px;
+  }
+  footer .text5a p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
 header {
   width: 100%;
   height: 15.7vh;
@@ -59,8 +153,31 @@ header .container1 .logo img {
   width: 100%;
 }
 
-header .container1 nav {
+header .container1 .menuDesktop {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .container1 .menuDesktop ol {
+  width: 580px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+header .container1 .menuDesktop ol li {
+  padding: 10px;
+  font-size: 16px;
 }
 
 header .container1 .burger {
@@ -507,90 +624,5 @@ footer .text5A {
 
 footer .text5A p {
   font-size: 15px;
-}
-
-@media (min-width: 370px) {
-  header {
-    height: 12.7vh;
-  }
-  .content .textcontent {
-    height: 35vh;
-  }
-  .content .textcontent .textA p {
-    font-size: 16px;
-  }
-  .content .textcontent .textB h1 {
-    font-size: 36px;
-  }
-  .content .textcontent .textC p {
-    font-size: 24px;
-  }
-  .content .buttons .button1, .content .buttons .button2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .content .textD {
-    width: 60%;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .content2 .textcontent2 {
-    height: 50vh;
-  }
-  .content2 .textcontent2 .text2A p {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .content2 .textcontent2 .text2B h1 {
-    font-size: 40px;
-  }
-  .content2 .textcontent2 .text2C p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .content3 .textcontent3 {
-    height: 50vh;
-  }
-  .content3 .textcontent3 .text3A p {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .content3 .textcontent3 .text3B h1 {
-    font-size: 40px;
-  }
-  .content3 .textcontent3 .text3C p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .content4 .textcontent4 {
-    height: 50vh;
-  }
-  .content4 .textcontent4 .text4A p {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .content4 .textcontent4 .text4B h1 {
-    font-size: 40px;
-  }
-  .content4 .textcontent4 .text4C p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .content5 .textcontent5 {
-    height: 25vh;
-  }
-  .content5 .textcontent5 h1 {
-    font-size: 40px;
-  }
-  .content5 .textcontent5 p {
-    font-size: 24px;
-  }
-  .content5 .buttons5 {
-    font-size: 16px;
-  }
-  footer .text5a p {
-    font-size: 12px;
-    font-weight: 500;
-  }
 }
 /*# sourceMappingURL=style.css.map */

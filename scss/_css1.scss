@@ -25,8 +25,24 @@ header{
                 width: 100%;
             }
         }
-        nav{
+        .menuDesktop{
             display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            ol{
+                width: 580px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                list-style-type: none;
+                li{
+                    padding: 10px;
+                    font-size: 16px;
+                }
+
+            }
         }
         .burger{
             position: absolute;
