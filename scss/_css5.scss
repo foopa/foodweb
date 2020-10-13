@@ -1,0 +1,41 @@
+.content4{
+    background-color: #FAFAFA;;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .textcontent4{
+        margin-top: 8vh;
+        width: 86%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .text4A{
+            font-size: 19px;
+            padding: 1%;    
+        }
+        .text4B{
+            font-size: 18px;
+            margin-left: 4%;
+            margin-right: 4%;  
+            
+        }
+        .text4C{
+            font-size: 19px;
+            margin-left: 15%;
+            margin-right: 15%;   
+        }
+
+    }
+    .phone4{
+     margin-top: 7vh;
+     margin-bottom: 7vh;
+     display: flex;
+     flex-direction: column;
+     img{
+         width: 100%;
+     }
+    }
+}

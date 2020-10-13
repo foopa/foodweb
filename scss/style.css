@@ -176,7 +176,6 @@ header .container1 .burger i {
 .content .textD {
   margin-top: 2vh;
   text-align: center;
-  border: 1px solid black;
   width: 55%;
   font-size: 18px;
 }
@@ -320,5 +319,199 @@ header .container1 .burger i {
 
 .content3 .phone3 img {
   width: 100%;
+}
+
+.content4 {
+  background-color: #FAFAFA;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content4 .textcontent4 {
+  margin-top: 8vh;
+  width: 86%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content4 .textcontent4 .text4A {
+  font-size: 19px;
+  padding: 1%;
+}
+
+.content4 .textcontent4 .text4B {
+  font-size: 18px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.content4 .textcontent4 .text4C {
+  font-size: 19px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content4 .phone4 {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content4 .phone4 img {
+  width: 100%;
+}
+
+.content5 {
+  width: 100%;
+  height: 75vh;
+  background-color: #252B42;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content5 .textcontent5 {
+  width: 81%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content5 .textcontent5 .text5A {
+  font-size: 18px;
+}
+
+.content5 .textcontent5 .text5B {
+  font-size: 19px;
+}
+
+.content5 .buttons5 {
+  margin-top: 7vh;
+  max-width: 339px;
+  width: 81%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content5 .buttons5 .button3 {
+  max-width: 137px;
+  width: 73%;
+  height: 64px;
+  border-radius: 10px;
+  line-height: 64px;
+  background-color: #FA4A0C;
+  color: white;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.content5 .buttons5 .button4 {
+  max-width: 186px;
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  border: white 1px solid;
+  line-height: 64px;
+  border-radius: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+}
+
+footer .socials {
+  max-width: 171px;
+  width: 100%;
+  height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .text5A {
+  margin-top: 2vh;
+}
+
+footer .text5A p {
+  font-size: 15px;
+}
+
+@media (min-width: 370px) {
+  header {
+    height: 12.7vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
