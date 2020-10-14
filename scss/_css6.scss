@@ -58,6 +58,7 @@
             position: relative;
             overflow: hidden;
             transition: .3s linear background-color;
+            outline: none;
         }
         button:nth-child(1):hover{
             background-color: #fa6c38;
