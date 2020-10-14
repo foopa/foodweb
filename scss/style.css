@@ -704,6 +704,16 @@ footer .text5A p {
     margin: 0;
     width: 236px;
   }
+  .content .buttons .button2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  .content .phones {
+    margin-top: 1vh;
+    margin-bottom: 130px;
+    margin-right: 5%;
+  }
   .content .textD {
     margin-top: 72px;
     margin-bottom: 58px;
