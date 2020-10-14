@@ -711,7 +711,7 @@ footer .text5A p {
   }
   .content .phones {
     margin-top: 1vh;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     margin-right: 5%;
   }
   .content .textD {
@@ -729,149 +729,185 @@ footer .text5A p {
   }
   .content2 {
     width: 100%;
-    height: 807px;
+    height: 657px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content2 .container2 {
+    width: 1141px;
+    height: 525px;
     position: relative;
   }
-  .content2 .textcontent2 {
-    position: absolute;
-    top: 233px;
-    right: 10.69%;
-    width: 568px;
-    height: 280px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .content2 .textcontent2 .text2A {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-  .content2 .textcontent2 .text2B {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 57px;
-  }
-  .content2 .textcontent2 .text2C {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 38px;
-    width: 467px;
-  }
-  .content2 .textcontent2 .text2C p {
-    font-size: 24px;
-  }
-  .content2 .phone2 {
-    position: absolute;
-    top: 78px;
-    left: 17%;
-  }
-  .content3 {
-    width: 100%;
-    height: 506px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: relative;
-  }
-  .content3 .textcontent3 {
-    position: absolute;
-    top: 88px;
-    left: 254px;
-    width: 568px;
-    height: 280px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin: 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .content3 .textcontent3 .text3A {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-  .content3 .textcontent3 .text3B {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 57px;
-  }
-  .content3 .textcontent3 .text3C {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 38px;
-    width: 467px;
-  }
-  .content3 .textcontent3 .text3C p {
-    font-size: 24px;
-  }
-  .content3 .phone3 {
-    position: absolute;
-    top: -110px;
-    right: 17%;
-  }
-  .content4 {
-    width: 100%;
-    height: 807px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: relative;
-  }
-  .content4 .textcontent4 {
-    position: absolute;
-    top: 233px;
-    right: 10.69%;
-    width: 568px;
-    height: 280px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .content4 .textcontent4 .text4A {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-  .content4 .textcontent4 .text4B {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 57px;
-  }
-  .content4 .textcontent4 .text4C {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 38px;
-    width: 467px;
-  }
-  .content4 .textcontent4 .text4C p {
-    font-size: 24px;
-  }
-  .content4 .phone4 {
+  .content2 .container2 .textcontent2 {
     position: absolute;
     top: 150px;
+    right: 0;
     margin: 0;
-    left: 17%;
+    width: 568px;
+    height: 280px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content2 .container2 .textcontent2 .text2A {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .content2 .container2 .textcontent2 .text2B {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 57px;
+  }
+  .content2 .container2 .textcontent2 .text2C {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 38px;
+    width: 467px;
+  }
+  .content2 .container2 .textcontent2 .text2C p {
+    font-size: 24px;
+  }
+  .content2 .container2 .phone2 {
+    position: absolute;
+    top: 0;
+    left: 95px;
+    margin: 0;
+    padding: 0;
+  }
+  .content3 {
+    margin-top: 150px;
+    width: 100%;
+    height: 657px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content3 .container3 {
+    width: 1141px;
+    height: 525px;
+    position: relative;
+  }
+  .content3 .container3 .textcontent3 {
+    position: absolute;
+    top: 88px;
+    left: 95px;
+    margin: 0;
+    width: 568px;
+    height: 280px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content3 .container3 .textcontent3 .text3A {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .content3 .container3 .textcontent3 .text3B {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 57px;
+  }
+  .content3 .container3 .textcontent3 .text3C {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 38px;
+    width: 467px;
+  }
+  .content3 .container3 .textcontent3 .text3C p {
+    font-size: 24px;
+  }
+  .content3 .container3 .phone3 {
+    position: absolute;
+    top: -70px;
+    right: 95px;
+    margin: 0;
+    padding: 0;
+  }
+  .content4 {
+    margin-top: 74px;
+    width: 100%;
+    height: 657px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content4 .container4 {
+    width: 1141px;
+    height: 525px;
+    position: relative;
+  }
+  .content4 .container4 .textcontent4 {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    margin: 0;
+    width: 568px;
+    height: 280px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content4 .container4 .textcontent4 .text4A {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .content4 .container4 .textcontent4 .text4B {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 57px;
+  }
+  .content4 .container4 .textcontent4 .text4C {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 38px;
+    width: 467px;
+  }
+  .content4 .container4 .textcontent4 .text4C p {
+    font-size: 24px;
+  }
+  .content4 .container4 .phone4 {
+    position: absolute;
+    top: 0;
+    left: 95px;
+    margin: 0;
+    padding: 0;
   }
   .content5 {
     width: 100%;

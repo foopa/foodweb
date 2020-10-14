@@ -82,7 +82,7 @@
         }
         .phones{
             margin-top: 1vh;
-            margin-bottom: 130px;
+            margin-bottom: 50px;
             margin-right: 5%;
         }
         .textD{
@@ -100,139 +100,193 @@
     }
     .content2{
         width: 100%;
-        height: 807px;
+        height: 657px;
         flex-direction: row;
-        position: relative;
         // border: 1px solid orange;
+        justify-content: center;
+         .container2{
+            //  background-color: red;
+             width: 1141px;
+             height: 525px;
+             position: relative;
 
-        .textcontent2{
-            position: absolute;
-            top: 233px;
-            right: 10.69%;
-            width: 568px;
-            height: 280px;
-            order: 1;
-            // border: 1px solid black;
-            align-items: flex-start;
-            .text2A{
+            .textcontent2{
+                position: absolute;
+                // top: 233px;
+                // right: 0;
+                top: 150px;
+                right: 0;
                 margin: 0;
-                padding: 0;
-                text-align: left;
-            }
-            .text2B{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 57px;
-            }
-            .text2C{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 38px;
-                width: 467px;
-                p{
-                    font-size: 24px;
+                // left: 473px;
+                width: 568px;
+                height: 280px;
+                order: 1;
+                // border: 1px solid black;
+                align-items: flex-start;
+                .text2A{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
                 }
+                .text2B{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 57px;
+                }
+                .text2C{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 38px;
+                    width: 467px;
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                
             }
-            
-        }
-        .phone2{
-            position: absolute;
-            top: 78px;
-            left: 17%;
-        }
+            .phone2{
+                position: absolute;
+                // top: 78px;
+                // left: 17%;
+                top: 0;
+                left: 95px;
+                margin: 0;
+                padding: 0;
+                // border: 1px solid black;
+
+            }
+         }
+      
     }
     .content3{
+        margin-top: 150px;
         width: 100%;
-        height: 506px;
+        height: 657px;
         flex-direction: row;
-        position: relative;
         // border: 1px solid orange;
-        
-        .textcontent3{
-            position: absolute;
-            top: 88px;
-            left: 254px;
-            width: 568px;
-            height: 280px;
-            order: 1;
-            // border: 1px solid black;
-            margin: 0;
-            align-items: flex-start;
-            .text3A{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-            }
-            .text3B{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 57px;
-            }
-            .text3C{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 38px;
-                width: 467px;
-                p{
-                    font-size: 24px;
-                }
-            }
-            
-        }
-        .phone3{
-            position: absolute;
-            top: -110px;
-            right: 17%;
-        }
-    }
-    .content4{
-        width: 100%;
-        height: 807px;
-        flex-direction: row;
-        position: relative;
-        // border: 1px solid orange;
+        align-items: flex-start;
+        justify-content: center;
+         .container3{
+            //  background-color: red;
+             width: 1141px;
+             height: 525px;
+             position: relative;
 
-        .textcontent4{
-            position: absolute;
-            top: 233px;
-            right: 10.69%;
-            width: 568px;
-            height: 280px;
-            order: 1;
-            // border: 1px solid black;
-            align-items: flex-start;
-            .text4A{
+            .textcontent3{
+                position: absolute;
+                // top: 233px;
+                // right: 0;
+                top: 88px;
+                left: 95px;
+                // background-color: #fff;
                 margin: 0;
-                padding: 0;
-                text-align: left;
-            }
-            .text4B{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 57px;
-            }
-            .text4C{
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                line-height: 38px;
-                width: 467px;
-                p{
-                    font-size: 24px;
+                // left: 473px;
+                width: 568px;
+                height: 280px;
+                order: 1;
+                // border: 1px solid black;
+                align-items: flex-start;
+                .text3A{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
                 }
+                .text3B{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 57px;
+                }
+                .text3C{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 38px;
+                    width: 467px;
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                
             }
-        }
-        .phone4{
-            position: absolute;
-            top: 150px;
-            margin: 0;
-            left: 17%;
-        }
+            .phone3{
+                position: absolute;
+                // top: 78px;
+                // left: 17%;
+                top: -70px;
+                right: 95px;
+                margin: 0;
+                padding: 0;
+            }
+         }
+      
+    }
+   
+    .content4{
+        margin-top: 74px;
+        width: 100%;
+        height: 657px;
+        flex-direction: row;
+        // border: 1px solid orange;
+        justify-content: center;
+        align-items: flex-start;
+         .container4{
+            //  background-color: red;
+             width: 1141px;
+             height: 525px;
+             position: relative;
+
+            .textcontent4{
+                position: absolute;
+                // top: 233px;
+                // right: 0;
+                top: 150px;
+                right: 0;
+                margin: 0;
+                // left: 473px;
+                width: 568px;
+                height: 280px;
+                order: 1;
+                // border: 1px solid black;
+                align-items: flex-start;
+                .text4A{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                }
+                .text4B{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 57px;
+                }
+                .text4C{
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 38px;
+                    width: 467px;
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                
+            }
+            .phone4{
+                position: absolute;
+                // top: 78px;
+                // left: 17%;
+                top: 0;
+                left: 95px;
+                margin: 0;
+                padding: 0;
+                // border: 1px solid black;
+
+            }
+         }
+      
     }
     .content5{
         width: 100%;
