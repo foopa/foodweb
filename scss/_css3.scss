@@ -4,38 +4,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .textcontent2{
-        margin-top: 8vh;
-        width: 86%;
-        height: 60vh;
+    .container2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        .text2A{
-            font-size: 19px;
-            padding: 1%;    
+        .textcontent2{
+            margin-top: 8vh;
+            width: 86%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .text2A{
+                font-size: 19px;
+                padding: 1%;    
+            }
+            .text2B{
+                font-size: 18px;
+                margin-left: 4%;
+                margin-right: 4%;  
+                
+            }
+            .text2C{
+                font-size: 19px;
+                margin-left: 15%;
+                margin-right: 15%;   
+            }
+    
         }
-        .text2B{
-            font-size: 18px;
-            margin-left: 4%;
-            margin-right: 4%;  
-            
+        .phone2{
+         margin-top: 7vh;
+         margin-bottom: 7vh;
+         display: flex;
+         flex-direction: column;
+         img{
+             width: 100%;
+         }
         }
-        .text2C{
-            font-size: 19px;
-            margin-left: 15%;
-            margin-right: 15%;   
-        }
-
     }
-    .phone2{
-     margin-top: 7vh;
-     margin-bottom: 7vh;
-     display: flex;
-     flex-direction: column;
-     img{
-         width: 100%;
-     }
-    }
+   
 }

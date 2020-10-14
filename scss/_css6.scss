@@ -27,7 +27,8 @@
         max-width: 339px;
         width: 81%;
         display: flex;
-        .button3{
+        button:nth-child(1){
+            cursor: pointer;
             max-width: 137px;
             width: 73%;
             height: 64px;
@@ -37,15 +38,43 @@
             color: white;
             text-align: center;
             margin-right: 5%;
+            outline: none;
+            border-style: none;
+            font-size: 24px;
+            transition: .3s linear background-color;
         }
-        .button4{
+        button:nth-child(2){
+            cursor: pointer;
             max-width: 186px;
             width: 100%;
             height: 64px;
             text-align: center;
-            border: white 1px solid;
             line-height: 64px;
             border-radius: 10px;
+            border: 1px solid white;
+            color: white;
+            background-color: transparent;
+            font-size: 24px;
+            position: relative;
+            overflow: hidden;
+            transition: .3s linear background-color;
+        }
+        button:nth-child(1):hover{
+            background-color: #fa6c38;
+        }
+        button:nth-child(2):before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: .2s linear;
+        }
+        button:nth-child(2):hover:before{
+            top: 0;
+            opacity: .2;
         }
     }
 }

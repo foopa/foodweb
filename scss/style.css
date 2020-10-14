@@ -91,6 +91,27 @@ header .container1 .menuDesktop ol li {
   cursor: pointer;
   padding: 10px;
   font-size: 16px;
+  position: relative;
+}
+
+header .container1 .menuDesktop ol li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #FA4A0C;
+  -webkit-transition: .1s linear;
+  transition: .1s linear;
+}
+
+header .container1 .menuDesktop ol li:hover::after {
+  width: 60%;
+  opacity: 1;
 }
 
 header .container1 .burger {
@@ -176,22 +197,50 @@ header .container1 .burger i {
           justify-content: space-between;
 }
 
-.content .buttons .button1, .content .buttons .button2 {
+.content .buttons button:nth-child(1), .content .buttons button:nth-child(2) {
+  cursor: pointer;
   max-width: 236px;
   width: 100%;
   height: 68px;
+  position: relative;
   border-radius: 30px;
   text-align: center;
+  border-style: none;
   line-height: 68px;
   background-color: #FA4A0C;
   color: white;
+  -webkit-transition: .3s linear background-color;
+  transition: .3s linear background-color;
+  overflow: hidden;
+  outline: none;
+  font-size: 24px;
 }
 
-.content .buttons .button2 {
-  background-color: #fff;
-  border: 1px solid #FA4A0C;
-  color: #FA4A0C;
-  margin-top: 2vh;
+.content .buttons button:nth-child(1):hover {
+  background-color: #fa6c38;
+}
+
+.content .buttons button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.content .buttons button:nth-child(2):before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.content .buttons button:nth-child(2):hover:before {
+  bottom: 0;
+  opacity: .2;
 }
 
 .content .phones {
@@ -230,7 +279,20 @@ header .container1 .burger i {
           align-items: center;
 }
 
-.content2 .textcontent2 {
+.content2 .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content2 .container2 .textcontent2 {
   margin-top: 8vh;
   width: 86%;
   height: 60vh;
@@ -249,24 +311,24 @@ header .container1 .burger i {
           justify-content: space-between;
 }
 
-.content2 .textcontent2 .text2A {
+.content2 .container2 .textcontent2 .text2A {
   font-size: 19px;
   padding: 1%;
 }
 
-.content2 .textcontent2 .text2B {
+.content2 .container2 .textcontent2 .text2B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.content2 .textcontent2 .text2C {
+.content2 .container2 .textcontent2 .text2C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.content2 .phone2 {
+.content2 .container2 .phone2 {
   margin-top: 7vh;
   margin-bottom: 7vh;
   display: -webkit-box;
@@ -278,7 +340,7 @@ header .container1 .burger i {
           flex-direction: column;
 }
 
-.content2 .phone2 img {
+.content2 .container2 .phone2 img {
   width: 100%;
 }
 
@@ -296,7 +358,20 @@ header .container1 .burger i {
           align-items: center;
 }
 
-.content3 .textcontent3 {
+.content3 .container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content3 .container3 .textcontent3 {
   margin-top: 8vh;
   width: 86%;
   height: 50vh;
@@ -315,24 +390,24 @@ header .container1 .burger i {
           justify-content: space-between;
 }
 
-.content3 .textcontent3 .text3A {
+.content3 .container3 .textcontent3 .text3A {
   font-size: 19px;
   padding: 1%;
 }
 
-.content3 .textcontent3 .text3B {
+.content3 .container3 .textcontent3 .text3B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.content3 .textcontent3 .text3C {
+.content3 .container3 .textcontent3 .text3C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.content3 .phone3 {
+.content3 .container3 .phone3 {
   margin-top: 7vh;
   margin-bottom: 7vh;
   display: -webkit-box;
@@ -344,7 +419,7 @@ header .container1 .burger i {
           flex-direction: column;
 }
 
-.content3 .phone3 img {
+.content3 .container3 .phone3 img {
   width: 100%;
 }
 
@@ -362,7 +437,20 @@ header .container1 .burger i {
           align-items: center;
 }
 
-.content4 .textcontent4 {
+.content4 .container4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content4 .container4 .textcontent4 {
   margin-top: 8vh;
   width: 86%;
   height: 50vh;
@@ -381,24 +469,24 @@ header .container1 .burger i {
           justify-content: space-between;
 }
 
-.content4 .textcontent4 .text4A {
+.content4 .container4 .textcontent4 .text4A {
   font-size: 19px;
   padding: 1%;
 }
 
-.content4 .textcontent4 .text4B {
+.content4 .container4 .textcontent4 .text4B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
 }
 
-.content4 .textcontent4 .text4C {
+.content4 .container4 .textcontent4 .text4C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.content4 .phone4 {
+.content4 .container4 .phone4 {
   margin-top: 7vh;
   margin-bottom: 7vh;
   display: -webkit-box;
@@ -410,7 +498,7 @@ header .container1 .burger i {
           flex-direction: column;
 }
 
-.content4 .phone4 img {
+.content4 .container4 .phone4 img {
   width: 100%;
 }
 
@@ -469,7 +557,8 @@ header .container1 .burger i {
   display: flex;
 }
 
-.content5 .buttons5 .button3 {
+.content5 .buttons5 button:nth-child(1) {
+  cursor: pointer;
   max-width: 137px;
   width: 73%;
   height: 64px;
@@ -479,16 +568,50 @@ header .container1 .burger i {
   color: white;
   text-align: center;
   margin-right: 5%;
+  outline: none;
+  border-style: none;
+  font-size: 24px;
+  -webkit-transition: .3s linear background-color;
+  transition: .3s linear background-color;
 }
 
-.content5 .buttons5 .button4 {
+.content5 .buttons5 button:nth-child(2) {
+  cursor: pointer;
   max-width: 186px;
   width: 100%;
   height: 64px;
   text-align: center;
-  border: white 1px solid;
   line-height: 64px;
   border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: .3s linear background-color;
+  transition: .3s linear background-color;
+}
+
+.content5 .buttons5 button:nth-child(1):hover {
+  background-color: #fa6c38;
+}
+
+.content5 .buttons5 button:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.content5 .buttons5 button:nth-child(2):hover:before {
+  top: 0;
+  opacity: .2;
 }
 
 footer {

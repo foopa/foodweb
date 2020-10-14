@@ -36,35 +36,52 @@
         }
     }
     .buttons{
-
         max-width: 236px;
         width: 100%;
         margin-top: 5vh;
-        // border: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
-        .button1,.button2{
+        button:nth-child(1),button:nth-child(2){
+            cursor: pointer;
             max-width: 236px;
             width: 100%;
             height: 68px;
-            // border: 1px solid black;
+            position: relative;
             border-radius: 30px;
             text-align: center;
+            border-style: none;
             line-height: 68px;
             background-color: $orange;
             color: white;
+            transition: .3s linear background-color;
+            overflow: hidden;
+            outline: none;
+            font-size: 24px;
         }
-        .button2{
-            background-color: #fff;
-            border: 1px solid $orange;
-            color: $orange;
-            margin-top: 2vh;
+        button:nth-child(1):hover{
+            background-color: #fa6c38;
         }
-    
-
+        button:nth-child(2){
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        button:nth-child(2):before {
+            content: "";
+            position: absolute;
+            bottom: -100%;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: .2s linear;
+        }
+        button:nth-child(2):hover:before{
+            bottom: 0;
+            opacity: .2;
+        }
     }
     .phones{
         margin-top: 6vh;   
