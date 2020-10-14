@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,6 +91,8 @@ header .container1 .menuDesktop ol li {
   cursor: pointer;
   padding: 10px;
   font-size: 16px;
+  color: #252B42;
+  font-weight: 600;
   position: relative;
 }
 
@@ -165,17 +167,22 @@ header .container1 .burger i {
   padding: 1%;
   font-size: 15px;
   font-weight: 700;
+  color: #737373;
 }
 
 .content .textcontent .textB {
   font-size: 18px;
   padding: 1%;
+  font-weight: 700;
+  color: #252B42;
 }
 
 .content .textcontent .textC {
   width: 90%;
   padding: 1%;
   font-size: 19px;
+  font-weight: 500;
+  color: #737373;
 }
 
 .content .buttons {
@@ -214,6 +221,7 @@ header .container1 .burger i {
   overflow: hidden;
   outline: none;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .content .buttons button:nth-child(1):hover {
@@ -221,9 +229,10 @@ header .container1 .burger i {
 }
 
 .content .buttons button:nth-child(2) {
+  margin-top: 17px;
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #FA4A0C;
+  color: #FA4A0C;
 }
 
 .content .buttons button:nth-child(2):before {
@@ -233,7 +242,7 @@ header .container1 .burger i {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #FA4A0C;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
@@ -256,6 +265,8 @@ header .container1 .burger i {
   text-align: center;
   width: 55%;
   font-size: 18px;
+  color: #252B42;
+  font-weight: 600;
 }
 
 .content .line {
@@ -314,18 +325,24 @@ header .container1 .burger i {
 .content2 .container2 .textcontent2 .text2A {
   font-size: 19px;
   padding: 1%;
+  color: #FA4A0C;
+  font-weight: 700;
 }
 
 .content2 .container2 .textcontent2 .text2B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
+  color: #252B42;
+  font-weight: 700;
 }
 
 .content2 .container2 .textcontent2 .text2C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
+  color: #737373;
+  font-weight: 500;
 }
 
 .content2 .container2 .phone2 {
@@ -393,18 +410,24 @@ header .container1 .burger i {
 .content3 .container3 .textcontent3 .text3A {
   font-size: 19px;
   padding: 1%;
+  color: #FA4A0C;
+  font-weight: 700;
 }
 
 .content3 .container3 .textcontent3 .text3B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
+  color: #252B42;
+  font-weight: 700;
 }
 
 .content3 .container3 .textcontent3 .text3C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
+  color: #737373;
+  font-weight: 500;
 }
 
 .content3 .container3 .phone3 {
@@ -472,18 +495,24 @@ header .container1 .burger i {
 .content4 .container4 .textcontent4 .text4A {
   font-size: 19px;
   padding: 1%;
+  color: #FA4A0C;
+  font-weight: 700;
 }
 
 .content4 .container4 .textcontent4 .text4B {
   font-size: 18px;
   margin-left: 4%;
   margin-right: 4%;
+  color: #252B42;
+  font-weight: 700;
 }
 
 .content4 .container4 .textcontent4 .text4C {
   font-size: 19px;
   margin-left: 15%;
   margin-right: 15%;
+  color: #737373;
+  font-weight: 500;
 }
 
 .content4 .container4 .phone4 {
@@ -542,10 +571,13 @@ header .container1 .burger i {
 
 .content5 .textcontent5 .text5A {
   font-size: 18px;
+  font-weight: 700;
 }
 
 .content5 .textcontent5 .text5B {
   font-size: 19px;
+  color: #BDBDBD;
+  font-weight: 500;
 }
 
 .content5 .buttons5 {
@@ -573,6 +605,7 @@ header .container1 .burger i {
   font-size: 24px;
   -webkit-transition: .3s linear background-color;
   transition: .3s linear background-color;
+  font-weight: 700;
 }
 
 .content5 .buttons5 button:nth-child(2) {
@@ -592,6 +625,7 @@ header .container1 .burger i {
   -webkit-transition: .3s linear background-color;
   transition: .3s linear background-color;
   outline: none;
+  font-weight: 700;
 }
 
 .content5 .buttons5 button:nth-child(1):hover {
@@ -661,6 +695,8 @@ footer .text5A {
 
 footer .text5A p {
   font-size: 15px;
+  color: #5C5C5C;
+  font-weight: 700;
 }
 
 @media (min-width: 370px) {
@@ -797,13 +833,16 @@ footer .text5A p {
   }
   .content .textcontent .textA p {
     font-size: 24px;
+    color: white;
   }
   .content .textcontent .textB h1 {
     font-size: 58px;
+    color: white;
   }
   .content .textcontent .textC {
     width: 728px;
     height: 96px;
+    color: white;
   }
   .content .textcontent .textC p {
     margin-top: 10px;
@@ -824,14 +863,25 @@ footer .text5A p {
     max-width: 506px;
     height: 68px;
   }
-  .content .buttons .button1, .content .buttons .button2 {
+  .content .buttons button:nth-child(1), .content .buttons button:nth-child(2) {
     margin: 0;
     width: 236px;
   }
-  .content .buttons .button2 {
+  .content .buttons button:nth-child(2) {
     background-color: transparent;
     color: white;
     border: 1px solid white;
+  }
+  .content .buttons button:nth-child(2):before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
   }
   .content .phones {
     margin-top: 1vh;
@@ -1052,6 +1102,7 @@ footer .text5A p {
   .content5 .textcontent5 .text5B p {
     margin: 10px;
     font-size: 24px;
+    color: white;
   }
   .content5 .buttons5 {
     width: 331px;
@@ -1090,6 +1141,7 @@ footer .text5A p {
   footer .text5B span {
     font-size: 12px;
     font-weight: 700;
+    color: #5C5C5C;
   }
 }
 /*# sourceMappingURL=style.css.map */

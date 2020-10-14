@@ -38,7 +38,9 @@ header{
                 li{
                     cursor: pointer;
                     padding: 10px;
-                    font-size: 16px;
+                    font-size: $menu;
+                    color: $textblack;
+                    font-weight: 600;
                     position: relative;
                 }
                 li::after{

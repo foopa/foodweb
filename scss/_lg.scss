@@ -29,9 +29,6 @@
             width: 100%;
             height: 619px;
             background-image: url('../img/bgc.png');
-            
-            // background-image: url("FoodWeb/img/bgc.png");
-
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
@@ -41,27 +38,29 @@
         .textcontent{
             width: 1005px;
             margin-top: 72px;
-            // border: 1px solid black ;
             height: 326px;
             justify-content: space-between;
             color: white;
             .textA{
                 p{
-                    font-size: 24px;
+                    font-size: $pfz;
+                    color: white;
                 }
             }
             .textB{
                 h1{
-                    font-size: 58px;
+                    font-size: $h1large;
+                    color: white;
                 }
             }
             .textC{
                 // border: 1px solid black;
                 width: 728px;
                 height: 96px;
+                color: white;
                 p{
                     margin-top: 10px;
-                    font-size: 24px;
+                    font-size: $pfz;
                 }
             }
         }
@@ -70,17 +69,26 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            // border: 1px solid black;
             max-width: 506px;
             height: 68px;
-            .button1,.button2{
+            button:nth-child(1),button:nth-child(2){
                 margin: 0;
                 width: 236px;
             }
-            .button2{
+            button:nth-child(2){
                 background-color: transparent;
                 color: white;
                 border: 1px solid white;
+            }
+            button:nth-child(2):before {
+                content: "";
+                position: absolute;
+                bottom: -100%;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                transition: .2s linear;
             }
         }
         .phones{
@@ -93,9 +101,8 @@
             margin-bottom: 58px;
             order: 1;
             h1{
-                font-size: 44px;
+                font-size: $h1medium;
             }
-
         }
         .line{
             width: 884px;
@@ -105,26 +112,20 @@
         width: 100%;
         height: 657px;
         flex-direction: row;
-        // border: 1px solid orange;
         justify-content: center;
          .container2{
-            //  background-color: red;
              width: 1141px;
              height: 525px;
              position: relative;
 
             .textcontent2{
                 position: absolute;
-                // top: 233px;
-                // right: 0;
                 top: 150px;
                 right: 0;
                 margin: 0;
-                // left: 473px;
                 width: 568px;
                 height: 280px;
                 order: 1;
-                // border: 1px solid black;
                 align-items: flex-start;
                 .text2A{
                     margin: 0;
@@ -144,52 +145,40 @@
                     line-height: 38px;
                     width: 467px;
                     p{
-                        font-size: 24px;
+                        font-size: $pfz;
                     }
                 }
                 
             }
+           
             .phone2{
                 position: absolute;
-                // top: 78px;
-                // left: 17%;
                 top: 0;
                 left: 95px;
                 margin: 0;
                 padding: 0;
-                // border: 1px solid black;
-
             }
          }
-      
     }
     .content3{
         margin-top: 150px;
         width: 100%;
         height: 657px;
         flex-direction: row;
-        // border: 1px solid orange;
         align-items: flex-start;
         justify-content: center;
          .container3{
-            //  background-color: red;
              width: 1141px;
              height: 525px;
              position: relative;
-
             .textcontent3{
                 position: absolute;
-                // top: 233px;
-                // right: 0;
                 top: 88px;
                 left: 95px;
-                // background-color: #fff;
                 margin: 0;
-                // left: 473px;
                 width: 568px;
                 height: 280px;
                 order: 1;
-                // border: 1px solid black;
                 align-items: flex-start;
                 .text3A{
                     margin: 0;
@@ -209,7 +198,7 @@
                     line-height: 38px;
                     width: 467px;
                     p{
-                        font-size: 24px;
+                        font-size: $pfz;
                     }
                 }
                 
@@ -232,27 +221,20 @@
         width: 100%;
         height: 657px;
         flex-direction: row;
-        // border: 1px solid orange;
         justify-content: center;
         align-items: flex-start;
          .container4{
-            //  background-color: red;
              width: 1141px;
              height: 525px;
              position: relative;
-
             .textcontent4{
                 position: absolute;
-                // top: 233px;
-                // right: 0;
                 top: 150px;
                 right: 0;
                 margin: 0;
-                // left: 473px;
                 width: 568px;
                 height: 280px;
                 order: 1;
-                // border: 1px solid black;
                 align-items: flex-start;
                 .text4A{
                     margin: 0;
@@ -272,21 +254,17 @@
                     line-height: 38px;
                     width: 467px;
                     p{
-                        font-size: 24px;
+                        font-size: $pfz;
                     }
                 }
                 
             }
             .phone4{
                 position: absolute;
-                // top: 78px;
-                // left: 17%;
                 top: 0;
                 left: 95px;
                 margin: 0;
                 padding: 0;
-                // border: 1px solid black;
-
             }
          }
       
@@ -304,13 +282,14 @@
             .text5A{
                 h1{
                 margin: 10px;
-                font-size: 40px;
+                font-size: $h1small;
                 }
             }
             .text5B{
                 p{
                     margin: 10px;
-                    font-size: 24px;
+                    font-size: $pfz;
+                    color: white;
                 }
             }
         }
@@ -343,8 +322,9 @@
         }
         .text5B{
             span{
-                font-size: 12px;
+                font-size: $pmini;
                 font-weight: 700;
+                color: $footertextcolor;
             }
         }
     }

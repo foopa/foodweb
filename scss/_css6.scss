@@ -17,9 +17,12 @@
         justify-content: space-around;
         .text5A{
             font-size: 18px;
+            font-weight: 700;
         }
         .text5B{
             font-size: 19px;
+            color: $textlightgray;
+            font-weight: 500;
         }
     }
     .buttons5{
@@ -42,6 +45,7 @@
             border-style: none;
             font-size: 24px;
             transition: .3s linear background-color;
+            font-weight: 700;
         }
         button:nth-child(2){
             cursor: pointer;
@@ -59,6 +63,7 @@
             overflow: hidden;
             transition: .3s linear background-color;
             outline: none;
+            font-weight: 700;
         }
         button:nth-child(1):hover{
             background-color: #fa6c38;

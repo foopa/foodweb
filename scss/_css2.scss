@@ -1,6 +1,5 @@
 .content{
     width: 100%;
-    // background-color: #FAFAFA;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +7,6 @@
     .textcontent{
         margin-top: 5vh;
         height: 40vh;
-        // border: 1px solid black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,23 +14,28 @@
         text-align: center;
         .textA{
             width: 30%;
-            // border: solid black 1px;
             padding: 1%;
             font-size: 15px;
             font-weight: 700;
+            color: $textgray;
         }
         .textB{           
             // border: 1px solid red;
             // font-size: 25px;
             font-size: 18px;
             padding: 1%;
+            font-weight: 700;
+            color: $textblack;
         }
         .textC{
             width: 90%;
             padding: 1%;
             // font-size: 18px;
             font-size: 19px;
+            font-weight: 500;
             // border: 1px solid black;
+            color: $textgray;
+
         }
     }
     .buttons{
@@ -59,14 +62,16 @@
             overflow: hidden;
             outline: none;
             font-size: 24px;
+            font-weight: 700;
         }
         button:nth-child(1):hover{
             background-color: #fa6c38;
         }
         button:nth-child(2){
+            margin-top: 17px;
             background-color: transparent;
-            border: 1px solid white;
-            color: white;
+            border: 1px solid $orange;
+            color: $orange;
         }
         button:nth-child(2):before {
             content: "";
@@ -75,7 +80,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background-color: white;
+            background-color: $orange;
             transition: .2s linear;
         }
         button:nth-child(2):hover:before{
@@ -96,6 +101,8 @@
         width: 55%;
         font-size: 18px;
         //order 1 da line nad textd
+        color: $textblack;
+        font-weight: 600;
     }
     .line{
         margin-top: 5vh;
