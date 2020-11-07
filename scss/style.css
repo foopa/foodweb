@@ -128,6 +128,7 @@ header .container1 .burger {
   -webkit-transition: .4s transform linear;
   transition: .4s transform linear;
   background: none;
+  cursor: pointer;
 }
 
 header .container1 .burger::before, header .container1 .burger::after {
@@ -175,15 +176,20 @@ header .container1 .burgerSlide {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -100vh;
-  width: 109%;
   left: 50%;
-  height: 50vh;
   -webkit-transition: .3s linear;
   transition: .3s linear;
   opacity: 0;
 }
 
+header .container1 .burgerSlide a {
+  color: #FA4A0C;
+  text-decoration: none;
+  font-size: 24px;
+}
+
 header .container1 .burgerSlide ol {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,23 +197,19 @@ header .container1 .burgerSlide ol {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  color: #FA4A0C;
-  font-size: 24px;
 }
 
 header .container1 .burgerSlide ol li {
   position: relative;
   text-align: center;
-  line-height: 12.5vh;
-  width: 100%;
-  height: 12.5vh;
+  cursor: pointer;
 }
 
 header .container1 .burgerSlide.on {
@@ -313,32 +315,11 @@ header .container1 .burgerSlide.on {
   font-weight: 700;
 }
 
-.content .buttons button:nth-child(1):hover {
-  background-color: #fa6c38;
-}
-
 .content .buttons button:nth-child(2) {
   margin-top: 17px;
   background-color: transparent;
   border: 1px solid #FA4A0C;
   color: #FA4A0C;
-}
-
-.content .buttons button:nth-child(2):before {
-  content: "";
-  position: absolute;
-  bottom: -100%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FA4A0C;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-}
-
-.content .buttons button:nth-child(2):hover:before {
-  bottom: 0;
-  opacity: .2;
 }
 
 .content .phones {
@@ -696,9 +677,9 @@ header .container1 .burgerSlide.on {
   outline: none;
   border-style: none;
   font-size: 24px;
+  font-weight: 700;
   -webkit-transition: .3s linear background-color;
   transition: .3s linear background-color;
-  font-weight: 700;
 }
 
 .content5 .buttons5 button:nth-child(2) {
@@ -719,27 +700,6 @@ header .container1 .burgerSlide.on {
   transition: .3s linear background-color;
   outline: none;
   font-weight: 700;
-}
-
-.content5 .buttons5 button:nth-child(1):hover {
-  background-color: #fa6c38;
-}
-
-.content5 .buttons5 button:nth-child(2):before {
-  content: "";
-  position: absolute;
-  top: -100%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-}
-
-.content5 .buttons5 button:nth-child(2):hover:before {
-  top: 0;
-  opacity: .2;
 }
 
 footer {
@@ -780,6 +740,18 @@ footer .socials {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+footer .socials :hover.tw {
+  -webkit-animation: twAnim 2s infinite linear;
+          animation: twAnim 2s infinite linear;
+}
+
+footer .socials :hover.fb, footer .socials :hover.in {
+  -webkit-animation: FbAndInAnim 2s infinite;
+          animation: FbAndInAnim 2s infinite;
 }
 
 footer .text5A {
@@ -902,6 +874,9 @@ footer .text5A p {
   header .container1 .burger {
     display: none;
   }
+  header .container1 .burgerSlide {
+    display: none;
+  }
   .content {
     position: relative;
   }
@@ -960,6 +935,9 @@ footer .text5A p {
     margin: 0;
     width: 236px;
   }
+  .content .buttons button:nth-child(1):hover {
+    background-color: #fa6c38;
+  }
   .content .buttons button:nth-child(2) {
     background-color: transparent;
     color: white;
@@ -975,6 +953,10 @@ footer .text5A p {
     background-color: white;
     -webkit-transition: .2s linear;
     transition: .2s linear;
+  }
+  .content .buttons button:nth-child(2):hover:before {
+    bottom: 0;
+    opacity: .2;
   }
   .content .phones {
     margin-top: 1vh;
@@ -993,6 +975,9 @@ footer .text5A p {
   }
   .content .line {
     width: 884px;
+  }
+  .content.on {
+    margin-top: 0vh;
   }
   .content2 {
     width: 100%;
@@ -1204,11 +1189,29 @@ footer .text5A p {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .content5 .buttons5 .button3 {
+  .content5 .buttons5 button:nth-child(1) {
     width: 142px;
   }
-  .content5 .buttons5 .button4 {
+  .content5 .buttons5 button:nth-child(2) {
     width: 173px;
+  }
+  .content5 .buttons5 button:nth-child(1):hover {
+    background-color: #fa6c38;
+  }
+  .content5 .buttons5 button:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  .content5 .buttons5 button:nth-child(2):hover:before {
+    top: 0;
+    opacity: .2;
   }
   footer {
     width: 100%;
@@ -1235,6 +1238,114 @@ footer .text5A p {
     font-size: 12px;
     font-weight: 700;
     color: #5C5C5C;
+  }
+}
+
+@-webkit-keyframes FbAndInAnim {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  10% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  20% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  40% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes FbAndInAnim {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  10% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  20% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  40% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes twAnim {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes twAnim {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

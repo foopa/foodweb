@@ -5,8 +5,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
     .container1{
         display: flex;
         position: relative;
@@ -73,6 +72,7 @@ header{
             outline: none;
             transition: .4s transform linear;
             background: none;
+            cursor: pointer;
         }
         .burger::before,.burger::after{
             content: "";
@@ -101,32 +101,30 @@ header{
             border-top: 3px $orange solid;
             transition: .3s linear;
 
-        }
-        
-        
+        }     
         .burgerSlide{
             position: absolute;       
             transform: translateX(-50%);
             top: -100vh;
-            width: 109%;
             left: 50%;
-            height: 50vh;
             transition: .3s linear;
             opacity: 0;
+            a{
+                color: $orange;
+                text-decoration: none;
+                font-size: $pfz;
+            }
             ol{
+                height: 50vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-evenly;;
                 align-items: center;
                 list-style-type: none;
-                color: $orange;
-                font-size: $pfz;
                 li{
                     position: relative;
                     text-align: center;
-                    line-height: 12.5vh;
-                    width: 100%;
-                    height: 12.5vh;
+                    cursor: pointer;
                 }
             }
         }
@@ -134,7 +132,5 @@ header{
             top: 10.5vh;
             opacity: .8;
         }
-       
-
     }
 }

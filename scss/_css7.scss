@@ -15,6 +15,13 @@ footer{
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
+        transition: 1s linear;
+        :hover.tw{
+            animation: twAnim 2s infinite linear;
+        }
+        :hover.fb,:hover.in{
+            animation: FbAndInAnim 2s infinite ;
+        }
     }
     .text5A{
         margin-top: 2vh;
@@ -24,4 +31,6 @@ footer{
             font-weight: 700;
         }
     }
+  
+   
 }

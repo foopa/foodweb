@@ -20,6 +20,9 @@
             .burger{
                 display: none;
             }
+            .burgerSlide{
+                display: none;
+            }
         }
          
     }
@@ -75,6 +78,9 @@
                 margin: 0;
                 width: 236px;
             }
+            button:nth-child(1):hover{
+                background-color: #fa6c38;
+            }
             button:nth-child(2){
                 background-color: transparent;
                 color: white;
@@ -89,6 +95,10 @@
                 height: 100%;
                 background-color: white;
                 transition: .2s linear;
+            }
+            button:nth-child(2):hover:before{
+                bottom: 0;
+                opacity: .2;
             }
         }
         .phones{
@@ -108,6 +118,9 @@
             width: 884px;
         }
     }
+    .content.on{
+        margin-top: 0vh;
+    }
     .content2{
         width: 100%;
         height: 657px;
@@ -117,7 +130,6 @@
              width: 1141px;
              height: 525px;
              position: relative;
-
             .textcontent2{
                 position: absolute;
                 top: 150px;
@@ -148,9 +160,7 @@
                         font-size: $pfz;
                     }
                 }
-                
             }
-           
             .phone2{
                 position: absolute;
                 top: 0;
@@ -201,21 +211,16 @@
                         font-size: $pfz;
                     }
                 }
-                
             }
             .phone3{
                 position: absolute;
-                // top: 78px;
-                // left: 17%;
                 top: -70px;
                 right: 95px;
                 margin: 0;
                 padding: 0;
             }
          }
-      
     }
-   
     .content4{
         margin-top: 74px;
         width: 100%;
@@ -257,7 +262,6 @@
                         font-size: $pfz;
                     }
                 }
-                
             }
             .phone4{
                 position: absolute;
@@ -267,7 +271,6 @@
                 padding: 0;
             }
          }
-      
     }
     .content5{
         width: 100%;
@@ -297,11 +300,28 @@
             width: 331px;
             height: 64px;
             justify-content: space-between;
-            .button3{
+            button:nth-child(1){
                 width: 142px;
             }
-            .button4{
+            button:nth-child(2){
                 width: 173px;
+            }
+            button:nth-child(1):hover{
+                background-color: #fa6c38;
+            }
+            button:nth-child(2):before {
+                content: "";
+                position: absolute;
+                top: -100%;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                transition: .2s linear;
+            }
+            button:nth-child(2):hover:before{
+                top: 0;
+                opacity: .2;
             }
         }
     }
@@ -328,6 +348,4 @@
             }
         }
     }
-   
-
 }

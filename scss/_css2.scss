@@ -22,8 +22,6 @@
             color: $textgray;
         }
         .textB{           
-            // border: 1px solid red;
-            // font-size: 25px;
             font-size: 18px;
             padding: 1%;
             font-weight: 700;
@@ -32,12 +30,9 @@
         .textC{
             width: 90%;
             padding: 1%;
-            // font-size: 18px;
             font-size: 19px;
             font-weight: 500;
-            // border: 1px solid black;
             color: $textgray;
-
         }
     }
     .buttons{
@@ -66,28 +61,11 @@
             font-size: 24px;
             font-weight: 700;
         }
-        button:nth-child(1):hover{
-            background-color: #fa6c38;
-        }
         button:nth-child(2){
             margin-top: 17px;
             background-color: transparent;
             border: 1px solid $orange;
             color: $orange;
-        }
-        button:nth-child(2):before {
-            content: "";
-            position: absolute;
-            bottom: -100%;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $orange;
-            transition: .2s linear;
-        }
-        button:nth-child(2):hover:before{
-            bottom: 0;
-            opacity: .2;
         }
     }
     .phones{
@@ -99,10 +77,8 @@
     .textD{
         margin-top: 2vh;
         text-align: center;
-        // border: 1px solid black;
         width: 55%;
         font-size: 18px;
-        //order 1 da line nad textd
         color: $textblack;
         font-weight: 600;
     }

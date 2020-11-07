@@ -1,0 +1,29 @@
+@keyframes FbAndInAnim{
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(-5px);}
+    20%{transform: translateX(10px);}
+    30%{transform: translateX(-5px);}
+    40%{transform: translateX(10px);}
+    50%{transform: translateX(0px);}
+}
+@keyframes twAnim{
+    0%{
+        transform: rotate(0);
+    }
+    20%{
+        transform: rotate(-5deg);
+    }
+    40%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    80%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
