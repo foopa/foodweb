@@ -117,19 +117,106 @@ header .container1 .menuDesktop ol li:hover::after {
 }
 
 header .container1 .burger {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: calc(50% - (20px / 2));
   right: 2%;
+  border: 0;
+  border-top: 4px solid #737373;
+  outline: none;
+  -webkit-transition: .4s transform linear;
+  transition: .4s transform linear;
+  background: none;
 }
 
-header .container1 .burger i {
-  font-size: 25px;
-  color: #737373;
+header .container1 .burger::before, header .container1 .burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 4px #737373 solid;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+header .container1 .burger::after {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  -webkit-transition: .3s transform linear;
+  transition: .3s transform linear;
+}
+
+header .container1 .burger.on {
+  -webkit-transform: rotate(45deg) translateY(4px);
+          transform: rotate(45deg) translateY(4px);
+  border: none;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+header .container1 .burger.on::after {
+  -webkit-transform: rotate(-90deg) translateX(-4px);
+          transform: rotate(-90deg) translateX(-4px);
+  border-top: 3px #FA4A0C solid;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+header .container1 .burger.on::before {
+  border-top: 3px #FA4A0C solid;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+header .container1 .burgerSlide {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -100vh;
+  width: 109%;
+  left: 50%;
+  height: 50vh;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  opacity: 0;
+}
+
+header .container1 .burgerSlide ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: #FA4A0C;
+  font-size: 24px;
+}
+
+header .container1 .burgerSlide ol li {
+  position: relative;
+  text-align: center;
+  line-height: 12.5vh;
+  width: 100%;
+  height: 12.5vh;
+}
+
+header .container1 .burgerSlide.on {
+  top: 10.5vh;
+  opacity: .8;
 }
 
 .content {
+  margin-top: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,6 +228,8 @@ header .container1 .burger i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .content .textcontent {
@@ -274,6 +363,10 @@ header .container1 .burger i {
   width: 100%;
   height: 2px;
   background-color: #E4E4E4;
+}
+
+.content.on {
+  margin-top: 50vh;
 }
 
 .content2 {

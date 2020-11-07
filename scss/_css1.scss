@@ -6,6 +6,7 @@ header{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    
     .container1{
         display: flex;
         position: relative;
@@ -59,20 +60,81 @@ header{
                     width: 60%;
                     opacity: 1;
                 }
-              
-
             }
         }
         .burger{
+            width: 20px;
+            height: 20px;
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 2%;
-            i{
-                font-size: 25px;
-                color: #737373;
+            top: calc(50% - (20px / 2));
+            right: 2%;   
+            border: 0;
+            border-top: 4px solid $textgray;
+            outline: none;
+            transition: .4s transform linear;
+            background: none;
+        }
+        .burger::before,.burger::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border-top: 4px $textgray solid;
+            transform: translateY(4px);
+        }
+        .burger::after{
+            transform: translateY(12px);
+            transition: .3s transform linear;
+        }
+        .burger.on{
+            transform: rotate(45deg) translateY(4px);
+            border: none;
+            transition: .3s linear;
+        }
+        .burger.on::after{
+            transform: rotate(-90deg) translateX(-4px);
+            border-top: 3px $orange solid;
+            transition: .3s linear;
+        }
+        .burger.on::before{
+            border-top: 3px $orange solid;
+            transition: .3s linear;
+
+        }
+        
+        
+        .burgerSlide{
+            position: absolute;       
+            transform: translateX(-50%);
+            top: -100vh;
+            width: 109%;
+            left: 50%;
+            height: 50vh;
+            transition: .3s linear;
+            opacity: 0;
+            ol{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                color: $orange;
+                font-size: $pfz;
+                li{
+                    position: relative;
+                    text-align: center;
+                    line-height: 12.5vh;
+                    width: 100%;
+                    height: 12.5vh;
+                }
             }
         }
+        .burgerSlide.on{
+            top: 10.5vh;
+            opacity: .8;
+        }
+       
 
     }
 }
