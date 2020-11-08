@@ -1,4 +1,3 @@
-
 .content{
     margin-top: 0;
     width: 100%;
@@ -17,9 +16,11 @@
         .textA{
             width: 30%;
             padding: 1%;
-            font-size: 15px;
             font-weight: 700;
             color: $textgray;
+           p{
+               font-size: 15px ;
+           }
         }
         .textB{           
             font-size: 18px;

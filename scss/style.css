@@ -92,9 +92,13 @@ header .container1 .menuDesktop ol li {
   cursor: pointer;
   padding: 10px;
   font-size: 16px;
-  color: #252B42;
   font-weight: 600;
   position: relative;
+}
+
+header .container1 .menuDesktop ol li a {
+  text-decoration: none;
+  color: #252B42;
 }
 
 header .container1 .menuDesktop ol li::after {
@@ -186,7 +190,7 @@ header .container1 .burgerSlide {
 header .container1 .burgerSlide a {
   color: #FA4A0C;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 header .container1 .burgerSlide ol {
@@ -257,9 +261,12 @@ header .container1 .burgerSlide.on {
 .content .textcontent .textA {
   width: 30%;
   padding: 1%;
-  font-size: 15px;
   font-weight: 700;
   color: #737373;
+}
+
+.content .textcontent .textA p {
+  font-size: 15px;
 }
 
 .content .textcontent .textB {
