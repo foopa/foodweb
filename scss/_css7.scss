@@ -3,7 +3,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 20vh;
     .logo2,.text5B{
         display: none;
     }
@@ -26,9 +26,11 @@ footer{
     .text5A{
         margin-top: 2vh;
         p{
-            font-size: 15px;
             color: $footertextcolor;
             font-weight: 700;
+        }
+        span{
+            font-size: 12px;
         }
     }
   

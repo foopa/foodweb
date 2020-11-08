@@ -37,6 +37,7 @@ header {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
 }
 
 header .container1 {
@@ -185,7 +186,7 @@ header .container1 .burgerSlide {
 header .container1 .burgerSlide a {
   color: #FA4A0C;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 header .container1 .burgerSlide ol {
@@ -331,12 +332,16 @@ header .container1 .burgerSlide.on {
 }
 
 .content .textD {
-  margin-top: 2vh;
+  margin-top: 12vh;
   text-align: center;
-  width: 55%;
+  width: 100%;
   font-size: 18px;
   color: #252B42;
   font-weight: 600;
+}
+
+.content .textD h1 {
+  font-size: 24px;
 }
 
 .content .line {
@@ -548,7 +553,6 @@ header .container1 .burgerSlide.on {
 }
 
 .content4 .container4 .textcontent4 {
-  margin-top: 8vh;
   width: 86%;
   height: 50vh;
   display: -webkit-box;
@@ -575,8 +579,8 @@ header .container1 .burgerSlide.on {
 
 .content4 .container4 .textcontent4 .text4B {
   font-size: 18px;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
   color: #252B42;
   font-weight: 700;
 }
@@ -676,7 +680,7 @@ header .container1 .burgerSlide.on {
   margin-right: 5%;
   outline: none;
   border-style: none;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   -webkit-transition: .3s linear background-color;
   transition: .3s linear background-color;
@@ -693,7 +697,7 @@ header .container1 .burgerSlide.on {
   border: 1px solid white;
   color: white;
   background-color: transparent;
-  font-size: 24px;
+  font-size: 16px;
   position: relative;
   overflow: hidden;
   -webkit-transition: .3s linear background-color;
@@ -716,7 +720,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 30vh;
+  height: 20vh;
 }
 
 footer .logo2, footer .text5B {
@@ -759,9 +763,12 @@ footer .text5A {
 }
 
 footer .text5A p {
-  font-size: 15px;
   color: #5C5C5C;
   font-weight: 700;
+}
+
+footer .text5A span {
+  font-size: 12px;
 }
 
 @media (min-width: 370px) {
@@ -846,6 +853,42 @@ footer .text5A p {
   footer .text5a p {
     font-size: 12px;
     font-weight: 500;
+  }
+}
+
+@media (width: 375px) {
+  .content .textcontent {
+    height: 35vh;
+  }
+  .content .textcontent .textA p {
+    font-size: 16px;
+  }
+  .content .textcontent .textB h1 {
+    margin-top: 3vh;
+    font-size: 36px;
+  }
+  .content .textcontent .textC p {
+    margin-top: 3vh;
+    font-size: 24px;
+  }
+  .content .buttons {
+    margin-top: 16vh;
+  }
+  .content .buttons .button1, .content .buttons .button2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .textD {
+    width: 100%;
+  }
+  .content2 .container2 .textcontent2 {
+    height: 60vh;
+  }
+  .content3 .container3 .textcontent3 {
+    height: 60vh;
+  }
+  .content4 .container4 .textcontent4 {
+    height: 60vh;
   }
 }
 
@@ -1238,6 +1281,86 @@ footer .text5A p {
     font-size: 12px;
     font-weight: 700;
     color: #5C5C5C;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 12.7vh;
+  }
+  header .container1 .burgerSlide a {
+    font-size: 32px;
+  }
+  .content .textcontent {
+    height: 35vh;
+    width: 70%;
+  }
+  .content .textcontent .textA p {
+    font-size: 32px;
+  }
+  .content .textcontent .textB h1 {
+    font-size: 42px;
+  }
+  .content .textcontent .textC p {
+    font-size: 32px;
+  }
+  .content .buttons .button1, .content .buttons .button2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .content .textD h1 {
+    font-size: 32px;
+  }
+  .content2 .textcontent2 {
+    height: 40vh !important;
+  }
+  .content2 .textcontent2 .text2A p {
+    font-size: 32px;
+  }
+  .content2 .textcontent2 .text2B h1 {
+    font-size: 42px;
+  }
+  .content2 .textcontent2 .text2C p {
+    font-size: 32px;
+  }
+  .content3 .textcontent3 {
+    height: 40vh !important;
+  }
+  .content3 .textcontent3 .text3A p {
+    font-size: 32px;
+  }
+  .content3 .textcontent3 .text3B h1 {
+    font-size: 42px;
+  }
+  .content3 .textcontent3 .text3C p {
+    font-size: 32px;
+  }
+  .content4 .textcontent4 {
+    height: 40vh !important;
+  }
+  .content4 .textcontent4 .text4A p {
+    font-size: 32px;
+  }
+  .content4 .textcontent4 .text4B h1 {
+    font-size: 42px;
+  }
+  .content4 .textcontent4 .text4C p {
+    font-size: 32px;
+  }
+  .content5 .textcontent5 {
+    height: 25vh;
+  }
+  .content5 .textcontent5 h1 {
+    font-size: 42px;
+  }
+  .content5 .textcontent5 p {
+    font-size: 32px;
+  }
+  .content5 .buttons5 {
+    font-size: 16px;
+  }
+  footer .text5A span {
+    font-size: 16px;
   }
 }
 

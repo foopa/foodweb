@@ -1,0 +1,127 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    header{
+        height: 12.7vh;
+        .container1{
+            .burgerSlide{
+                a{
+                    font-size: $pfzTablet;
+                }
+            }
+        }
+    }
+    .content{
+        .textcontent{
+            height: 35vh;
+            width: 70%;
+            .textA{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+            .textB{
+                h1{
+                    font-size: $h1largeTablet;
+                }
+            }
+            .textC{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+        }
+        .buttons{
+            .button1,.button2{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .textD{
+           h1{font-size: $pfzTablet;}
+        }
+    }
+    .content2{
+        .textcontent2{
+            height: 40vh !important;
+            .text2A{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+            .text2B{
+                h1{
+                    font-size: $h1largeTablet;
+                }
+            }
+            .text2C{
+                p{
+                    font-size: $pfzTablet;
+                }
+
+            }
+        }
+    }
+    .content3{
+        .textcontent3{
+            height: 40vh !important;
+            .text3A{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+            .text3B{
+                h1{
+                    font-size: $h1largeTablet;
+                }
+            }
+            .text3C{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+        }
+    }
+    .content4{
+        .textcontent4{
+            height: 40vh !important;
+            .text4A{
+                p{
+                    font-size: $pfzTablet;
+                }
+            }
+            .text4B{
+                h1{
+                    font-size: $h1largeTablet;
+                }
+            }
+            .text4C{
+                p{
+                    font-size: $pfzTablet;
+                }
+
+            }
+        }
+    }
+    .content5{
+        .textcontent5{
+            height: 25vh;
+            h1{
+               font-size: $h1largeTablet;
+            }
+            p{
+                font-size: $pfzTablet;
+            }
+        }
+        .buttons5{
+            font-size: 16px;
+        }
+    }
+    footer{
+        .text5A{
+            span{
+                font-size: $pminiTablet;
+            }
+        }
+    }
+
+
+}

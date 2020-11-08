@@ -75,12 +75,15 @@
        }
     }
     .textD{
-        margin-top: 2vh;
+        margin-top: 12vh;
         text-align: center;
-        width: 55%;
+        width: 100%;
         font-size: 18px;
         color: $textblack;
         font-weight: 600;
+        h1{
+            font-size: 24px;
+        }
     }
     .line{
         margin-top: 5vh;

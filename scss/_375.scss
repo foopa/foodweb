@@ -1,0 +1,56 @@
+@media (width:375px){
+
+    .content{
+        .textcontent{
+            height: 35vh;
+            .textA{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .textB{
+                h1{
+                    margin-top: 3vh;
+                    font-size: 36px;
+                }
+            }
+            .textC{
+                p{
+                    margin-top: 3vh;
+                    font-size: 24px;
+                }
+            }
+        }
+        .buttons{
+            margin-top: 16vh;
+            .button1,.button2{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .textD{
+            width: 100%;
+        }
+    }
+    .content2{
+        .container2{
+            .textcontent2{
+                height: 60vh;
+            }
+        }
+    }
+    .content3{
+        .container3{
+            .textcontent3{
+                height: 60vh;
+            }
+        }
+    }
+    .content4{
+        .container4{
+            .textcontent4{
+                height: 60vh;
+            }
+        }
+    }
+}
